@@ -9,7 +9,7 @@ fi
 #-----------------------------------------------------------
 
 #Step 2) Update repository----------------------------------
-sudo apt-get update -y
+sudo apt update -y
 #-----------------------------------------------------------
 
 #Step 3) disable UART from retroflag install ---------------
@@ -43,9 +43,7 @@ if [ -e $script ];
 		echo "Script will be installed now! Downloading ..."
 fi
 
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/SafeShutdown.py"
-wget -N -q --show-progress "https://raw.githubusercontent.com/crcerror/retroflag-picase/master/multi_switch.sh"
-chmod +x multi_switch.sh
+wget -N -q --show-progress "https://raw.githubusercontent.com/minhnhattonthat/retroflag-picase/master/SafeShutdown.py"
 
 #-----------------------------------------------------------
 
